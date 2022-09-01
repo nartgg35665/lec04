@@ -1,0 +1,18 @@
+<body>
+<%= form_with url: "/main/test2", method:"post",  data:{turbo:false} do |form| %>
+ <p>subject	          score</p>
+	<%=form.text_field:subject1 %>
+	<%=form.text_field:score1 %>
+	<br/>
+	<%=form.text_field:subject2 %>
+	<%=form.text_field:score2 %>
+	<br/>
+	<%=form.text_field:subject3 %>
+	<%=form.text_field:score3%>
+	<br/>
+	<%=form.submit "submit" %>
+	<br/>
+
+<% end %>
+</body>
+
